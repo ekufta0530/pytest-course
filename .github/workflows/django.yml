@@ -25,7 +25,7 @@ jobs:
       run: |
         pip install pipenv --upgrade
         pipenv install --system
-    - name: Run Tests
+    - name: Django Company API Tests
       run: |
         pytest
 

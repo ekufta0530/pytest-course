@@ -21,6 +21,7 @@ install = "*"
 django-cors-headers = "*"
 ddtrace = "*"
 gunicorn = "*"
+django = "*"
 
 [requires]
 python_version = "3.8"
