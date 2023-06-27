@@ -23,8 +23,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install Dependencies
       run: |
-        python -m pip install --upgrade pip
-        pipenv install
+        pip install pipenv --upgrade
+        pipenv install --system
     - name: Run Tests
       run: |
-        python manage.py test
+        pytest api/coronavstech -s -v --durations=0 --cov=. -m "not skip_in_ci"
+
