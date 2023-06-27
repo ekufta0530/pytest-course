@@ -27,5 +27,5 @@ jobs:
         pipenv install --system
     - name: Run Tests
       run: |
-        pytest api/coronavstech -s -v --durations=0 --cov=. -m "not skip_in_ci"
+        pytest
 
