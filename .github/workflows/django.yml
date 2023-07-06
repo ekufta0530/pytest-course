@@ -8,7 +8,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -28,4 +27,3 @@ jobs:
     - name: Django Company API Tests
       run: |
         pytest
-
